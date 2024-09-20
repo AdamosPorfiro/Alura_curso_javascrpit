@@ -7,7 +7,7 @@
 
 //Criamos uma função para alcançar o mesmo resultado dos códigos digitados acima
 let listaDeNumerosSorteados = [];
-let numeroLimite = 10;
+let numeroLimite = 100;
 let quantidadeTentativas = 1;
 function exibirTExtoNaTela(tag, texto){ // parâmetro tag= codigo html e texto o texto a ser informado
     let campo = document.querySelector(tag);//Variavel que vai selecionar a tag e inserir o texto no html e exibi-lo
@@ -17,7 +17,7 @@ function exibirTExtoNaTela(tag, texto){ // parâmetro tag= codigo html e texto o
 //Criams uma função para exibir a mensagem na tela
 function exibirMensagemInicial(){
     exibirTExtoNaTela('h1','Jogo do número secreto');
-    exibirTExtoNaTela('p', 'Escolha um número entre 1 e 10');
+    exibirTExtoNaTela('p', 'Escolha um número entre 1 e 100');
 }
 
 let numeroSecreto = gerarNumeroAleatorio(); // guarda o numero secreto!
